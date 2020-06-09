@@ -1,0 +1,160 @@
+@media (min-width: 1050px){
+    .search-cover {
+        display: none;
+    }
+}
+.search-cover{
+    position: relative;
+}
+.openSearch{
+    position: fixed !important;
+    background: #fff;
+    z-index: 1;
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-btn-mobile {
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    border-right: 1px solid #d8d8d8;
+}
+.openSearch .search-btn-mobile{
+    right: 0;
+    top: 0;
+    border: 0;
+    position: absolute;
+}
+.search-btn-mobile img{
+    width: 20px;
+}
+.search-content-container{
+    width: 100%;
+    padding: 0 40px;
+}
+.search-field-container{
+    position: relative;
+}
+.search-field-container img{
+    position: absolute;
+    bottom: 18px;
+}
+.search-control{
+    width: 100%;
+    padding: 15px 32px;
+    border: 0;
+    border-bottom: 1px solid #d8d8d8;
+}
+.search-category-dropdown{
+    width: 100%;
+}
+.search-category-dropdown button{
+    width: 100%;
+    height: 48px;
+    text-align: left;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+}
+.search-category-dropdown ul{
+    width: 100%;
+    list-style: none;
+    padding: 5px;
+}
+.search-content-container h3{
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1.8px;
+    color: #616161;
+    margin-top: 36px;
+    text-transform: uppercase;
+}
+.search-button-container{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 0;
+}
+.search-button-container button {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    padding: 14px 21px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    border: solid 1px #000000;
+    background-color: #ffffff;
+}
+.search-button-container button:hover{
+    color: #fff;
+    background-color: #000;
+
+}
+
+
+/*iPad mini in portrait*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  {
+    .search-category-dropdown ul{
+        height: 300px;
+        overflow: auto;
+    }
+    .search-category-dropdown ul ul{
+        height: 100%;
+        overflow: unset;
+    }
+}
+
+/*iPhone X in portrait*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+    .search-category-dropdown ul{
+        height: 300px;
+        overflow: auto;
+    }
+    .search-category-dropdown ul ul{
+        height: 100%;
+        overflow: unset;
+    }
+}
+
+/*iPhone 6, 7, & 8 Plus in portrait*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+    .search-category-dropdown ul{
+        height: 250px;
+        overflow: auto;
+    }
+    .search-category-dropdown ul ul{
+        height: 100%;
+        overflow: unset;
+    }
+}
+
+/*iPhone 5 & 5S in portrait*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    .search-category-dropdown ul{
+        height: 200px;
+        overflow: auto;
+    }
+    .search-category-dropdown ul ul{
+        height: 100%;
+        overflow: unset;
+    }
+}

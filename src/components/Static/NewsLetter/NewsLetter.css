@@ -1,0 +1,14 @@
+.abc {
+	font-size: 16px;
+}
+.display_hide {
+	display: none;
+}
+.errorClass {
+	color: #cd4343 !important;
+	font-weight: bold;
+}
+.successClass {
+	color: #70c173;
+	font-weight: bold;
+}

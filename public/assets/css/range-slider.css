@@ -1,0 +1,151 @@
+.input-range__slider {
+  appearance: none;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  height: 18px;
+  margin-left: -10px;
+  margin-top: -11px;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  width: 18px;
+}
+  .input-range__slider:active {
+    transform: scale(1.1); 
+  }
+  .input-range__slider:focus {
+    box-shadow: 0 0 0 5px rgba(63, 81, 181, 0.2);
+  }
+  .input-range--disabled .input-range__slider {
+    background: #cccccc;
+    border: 1px solid #cccccc;
+    box-shadow: none;
+    transform: none; }
+
+.input-range__slider-container {
+  transition: left 0.3s ease-out; }
+
+.input-range__label {
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  transform: translateZ(0);
+  white-space: nowrap;
+  font-weight: 600;
+  display: none;
+}
+
+.input-range__label--min,
+.input-range__label--max {
+  bottom: -3.4rem;
+  position: absolute;
+}
+
+.input-range__label--min {
+  left: 0; }
+
+.input-range__label--max {
+  right: 0; }
+
+.input-range__label--value {
+  position: absolute;
+  top: -2.8rem;
+  left: 3px;
+}
+
+.input-range__label-container {
+  left: -50%;
+  position: relative; 
+}
+  .input-range__label--max .input-range__label-container {
+    left: 50%; 
+  }
+.input-range__label--min .input-range__label-container ,
+.input-range__label--max .input-range__label-container {
+  display: none;
+}
+.input-range__track {
+  background: #d0d0d0;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: left 0.3s ease-out, width 0.3s ease-out;
+}
+  .input-range--disabled .input-range__track {
+    background: #eeeeee; 
+  }
+
+.input-range__track--background {
+  left: 0;
+  margin-top: -0.15rem;
+  position: absolute;
+  right: 0;
+  top: 50%; }
+
+.input-range__track--active {
+  background: #222; 
+}
+
+.input-range {
+  height: 1rem;
+  position: relative;
+  width: 100%; }
+  .range-value-set-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0 0;
+}
+.price-range-slider {
+  margin-top: 18px;
+  padding: 0 0 0 8px;
+}
+.price-filter-btn {
+  text-align: center;
+  margin-top: 35px;
+}
+.range-value-set-wrap > div {
+    height: 48px;
+    width: 90px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    padding:0;
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+    position: relative;
+}
+.range-value-set-wrap input {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  border: none;
+  padding: 12px 10px;
+  text-align: center;
+}
+.range-value-spacer{
+  display: block;
+  height: 48px;
+  margin: 0 5px;
+  padding: 12px 0;
+}
+.range-value-set-wrap button {
+  height: 48px;
+  width: 52px;
+  border-radius: 2px;
+  border: solid 1px #000000;
+  background-color: #ffffff;
+  color: #000;
+  text-transform: uppercase;
+  margin-left: 14px;
+}

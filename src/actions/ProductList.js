@@ -1,0 +1,161 @@
+import {createAction} from "redux-actions";
+
+export const productListActions = {
+    PRODUCTLIST_REQUEST: "ProductList Requested!",
+    PRODUCTLIST_SUCCESS: "ProductList successfully!",
+    PRODUCTLIST_FAILED: "ProductList failed!",
+    PRODUCTLIST_START: "ProductList Started!",
+    PRODUCTLIST_FILTER: "ProductList Filter Started!",
+    PRODUCTLIST_CLEARED: "ProductList Filter Cleared!",
+    PRODUCTLIST_SET_CHECK: "PRODUCTLIST_SET_CHECK",
+
+    PRODUCTLIST_WEBINAR_REQUEST: "PRODUCTLIST_WEBINAR_REQUEST",
+    PRODUCTLIST_WEBINAR_SUCCESS: "PRODUCTLIST_WEBINAR_SUCCESS",
+    PRODUCTLIST_WEBINAR_FAILED: "PRODUCTLIST_WEBINAR_FAILED",
+    PRODUCTLIST_WEBINAR_START: "PRODUCTLIST_WEBINAR_START",
+    PRODUCTLIST_WEBINAR_CLEARED: 'PRODUCTLIST_WEBINAR_CLEARED',
+
+    HOME_PAGE_POPULAR_PRODUCTS_REQUEST: "HOME_PAGE_POPULAR_PRODUCTS_REQUEST",
+    HOME_PAGE_POPULAR_PRODUCTS_START: "HOME_PAGE_POPULAR_PRODUCTS_START",
+    HOME_PAGE_POPULAR_PRODUCTS_SUCCESS: "HOME_PAGE_POPULAR_PRODUCTS_SUCCESS",
+    HOME_PAGE_POPULAR_PRODUCTS_FAILED: "HOME_PAGE_POPULAR_PRODUCTS_FAILED",
+
+    HOME_PAGE_POPULAR_WEBINARS_REQUEST: "HOME_PAGE_POPULAR_WEBINARS_REQUEST",
+    HOME_PAGE_POPULAR_WEBINARS_START: "HOME_PAGE_POPULAR_WEBINARS_START",
+    HOME_PAGE_POPULAR_WEBINARS_SUCCESS: "HOME_PAGE_POPULAR_WEBINARS_SUCCESS",
+    HOME_PAGE_POPULAR_WEBINARS_FAILED: "HOME_PAGE_POPULAR_WEBINARS_FAILED",
+
+    PRODUCT_LIST_FROM_STATE_REQUEST: "PRODUCT_LIST_FROM_STATE_REQUEST",
+    PRODUCT_LIST_FROM_STATE_SUCCESS: "PRODUCT_LIST_FROM_STATE_SUCCESS",
+    PRODUCT_LIST_FROM_STATE_FAILED: "PRODUCT_LIST_FROM_STATE_FAILED",
+    PRODUCT_LIST_FROM_STATE_START: "PRODUCT_LIST_FROM_STATE_START",
+    PRODUCT_LIST_FROM_STATE_FILTER: "PRODUCT_LIST_FROM_STATE_FILTER",
+
+    PRODUCT_LIST_SAVE_STATE_REQUEST: "PRODUCT_LIST_SAVE_STATE_REQUEST",
+    PRODUCT_LIST_SAVE_STATE_SUCCESS: "PRODUCT_LIST_SAVE_STATE_SUCCESS",
+    PRODUCT_LIST_SAVE_STATE_FAILED: "PRODUCT_LIST_SAVE_STATE_FAILED",
+    PRODUCT_LIST_SAVE_STATE_START: "PRODUCT_LIST_SAVE_STATE_START",
+    PRODUCT_LIST_SAVE_STATE_FILTER: "PRODUCT_LIST_SAVE_STATE_FILTER",
+
+    PRODUCT_LIST_AUTOCOMPLETE_REQUEST: 'PRODUCT_LIST_AUTOCOMPLETE_REQUEST',
+    PRODUCT_LIST_AUTOCOMPLETE_SUCCESS: 'PRODUCT_LIST_AUTOCOMPLETE_SUCCESS',
+    PRODUCT_LIST_AUTOCOMPLETE_FAILED: 'PRODUCT_LIST_AUTOCOMPLETE_FAILED',
+    PRODUCT_LIST_AUTOCOMPLETE_START: 'PRODUCT_LIST_AUTOCOMPLETE_START',
+    PRODUCT_LIST_AUTOCOMPLETE_CLEAR: 'PRODUCT_LIST_AUTOCOMPLETE_CLEAR',
+
+    PRODUCT_ALL_DATA_CLEAR_REQUEST: 'PRODUCT_ALL_DATA_CLEAR_REQUEST',
+    PRODUCT_ALL_DATA_CLEAR_SUCCESS: 'PRODUCT_ALL_DATA_CLEAR_SUCCESS',
+    PRODUCT_ALL_DATA_CLEAR_FAILED: 'PRODUCT_ALL_DATA_CLEAR_FAILED',
+    PRODUCT_ALL_DATA_CLEAR_START: 'PRODUCT_ALL_DATA_CLEAR_START',
+
+    PRODUCT_LIST_FILTERS_REQUEST: 'PRODUCT_LIST_FILTERS_REQUEST',
+    PRODUCT_LIST_FILTERS_SUCCESS: 'PRODUCT_LIST_FILTERS_SUCCESS',
+    PRODUCT_LIST_FILTERS_FAILED: 'PRODUCT_LIST_FILTERS_FAILED',
+    PRODUCT_LIST_FILTERS_START: 'PRODUCT_LIST_FILTERS_START',
+    PRODUCT_LIST_FILTERS_CLEAR: 'PRODUCT_LIST_FILTERS_CLEAR',
+
+    HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_REQUEST: "HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_REQUEST",
+    HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_START: "HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_START",
+    HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_SUCCESS: "HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_SUCCESS",
+    HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_FAILED: "HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_FAILED",
+
+    PRODUCT_SAVE_LAST_FILTERS: "PRODUCT_SAVE_LAST_FILTERS",
+};
+
+
+export const productAllDataClearRequest = createAction(
+  productListActions.PRODUCT_ALL_DATA_CLEAR_REQUEST
+);
+export const productAllDataClearStarted = createAction(
+  productListActions.PRODUCT_ALL_DATA_CLEAR_START
+);
+export const productAllDataClearSuccess = createAction(
+  productListActions.PRODUCT_ALL_DATA_CLEAR_SUCCESS
+);
+export const productAllDataClearFailed = createAction(
+  productListActions.PRODUCT_ALL_DATA_CLEAR_FAILED
+);
+
+export const productListRequest = createAction(
+    productListActions.PRODUCTLIST_REQUEST
+);
+export const productListStarted = createAction(
+    productListActions.PRODUCTLIST_START
+);
+export const productListSuccess = createAction(
+    productListActions.PRODUCTLIST_SUCCESS
+);
+export const productListFailed = createAction(
+    productListActions.PRODUCTLIST_FAILED
+);
+
+
+export const productListAutoCompleteRequest = createAction(
+  productListActions.PRODUCT_LIST_AUTOCOMPLETE_REQUEST
+);
+export const productListAutoCompleteStarted = createAction(
+  productListActions.PRODUCT_LIST_AUTOCOMPLETE_START
+);
+export const productListAutoCompleteSuccess = createAction(
+  productListActions.PRODUCT_LIST_AUTOCOMPLETE_SUCCESS
+);
+export const productListAutoCompleteFailed = createAction(
+  productListActions.PRODUCT_LIST_AUTOCOMPLETE_FAILED
+);
+export const productListAutoCompleteCleared = createAction(
+  productListActions.PRODUCT_LIST_AUTOCOMPLETE_CLEAR
+);
+
+export const productListFiltersRequest = createAction(
+  productListActions.PRODUCT_LIST_FILTERS_REQUEST
+);
+export const productListFiltersStarted = createAction(
+  productListActions.PRODUCT_LIST_FILTERS_START
+);
+export const productListFiltersSuccess = createAction(
+  productListActions.PRODUCT_LIST_FILTERS_SUCCESS
+);
+export const productListFiltersFailed = createAction(
+  productListActions.PRODUCT_LIST_FILTERS_FAILED
+);
+export const productListFiltersCleared = createAction(
+  productListActions.PRODUCT_LIST_FILTERS_CLEAR
+);
+
+
+export const productListFilterRedirection = createAction(
+    productListActions.PRODUCTLIST_FILTER
+);
+export const productListCleared = createAction(
+  productListActions.PRODUCTLIST_CLEARED
+);
+
+export const homePagePopularWebinarsAndProductsRequest = createAction(
+  productListActions.HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_REQUEST,
+);
+export const homePagePopularWebinarsAndProductsStarted = createAction(
+  productListActions.HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_START,
+);
+export const homePagePopularWebinarsAndProductsSuccess = createAction(
+  productListActions.HOME_PAGE_POPULAR_WEBINARS_AND_PRODUCTS_SUCCESS,
+);
+
+export const productListGetFromStateStart = createAction(
+  productListActions.PRODUCT_LIST_FROM_STATE_START,
+);
+
+export const productListSaveStateRequest = createAction(
+  productListActions.PRODUCT_LIST_SAVE_STATE_REQUEST,
+);
+export const productListSaveFromStateStart = createAction(
+  productListActions.PRODUCT_LIST_SAVE_STATE_START,
+);
+
+export const productListSaveFromStateSuccess = createAction(
+  productListActions.PRODUCT_LIST_SAVE_STATE_SUCCESS,
+);
+
+export const productSaveLastFilters = createAction(
+  productListActions.PRODUCT_SAVE_LAST_FILTERS,
+);
+

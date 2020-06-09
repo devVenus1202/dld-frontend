@@ -1,0 +1,72 @@
+.heading{
+    color: #000;
+    font-weight: 600;
+    margin-top: 35px;
+    text-align: center;
+}
+.head-para {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.head-reason{
+    color: #616161;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+.mistake{
+    color: #777777;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.unsubscribe{
+    text-align: center;
+}
+.unsubscribe textarea{
+    padding: 14px 20px;
+    border-radius: 2px;
+    border: solid 1px #dddddd;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.unsubscribe button{
+    margin:30px 0;
+}
+.re-subscribe-btn{
+    border: 0;
+    outline: none;
+    color: #fd9325;
+    font-size: 16px;
+    margin: 0 !important;
+    text-decoration: underline;
+    background: transparent;
+}
+
+@media(max-width: 1040px) {
+    .heading{
+        margin-top: 29px;
+    }
+    .head-para {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    .head-reason{
+        font-size: 11px;
+        margin-top: 25px;
+    }
+    .mistake{
+        font-size: 13px;
+        margin-bottom: 45px;
+    }
+    .unsubscribe, .re-subscribe-btn{
+        font-size: 13px;
+    }
+    .unsubscribe textarea{
+        height: 80px;
+    }
+}

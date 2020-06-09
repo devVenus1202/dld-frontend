@@ -1,0 +1,22 @@
+{
+  "name": "DLD VIP",
+  "short_name": "DLD VIP",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "gcm_sender_id": "103953800507",
+  "description": "World Famous Gun Reviews and Shooting Sports Store",
+  "icons": [
+    {
+      "src": "192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.userCommentBox {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.commentUserBox {
+    width: 50%;
+}
+@media (max-width: 1050px){
+    .commentUserBox {
+        width: calc(100% - 90px);
+    }
+}

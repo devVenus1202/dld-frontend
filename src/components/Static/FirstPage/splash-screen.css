@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+.theme-container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 70px;
+    background-color: #f4f3f1;
+}
+@media (max-width: 1040px) {
+    .theme-container {
+        padding-top: 60px;
+    }
+}
+.container-fluid {
+    padding: 0 30px;
+    max-width: 1800px;
+    position: relative;
+}
+.content{
+
+}
+/* ================Start Splash CSS =============== */
+.splash-image-wrap{
+    position: relative;
+}
+.splash-image-block{
+    background-size: cover;
+    background-position: center center;
+}
+.splash-image-block.outdoor{
+	background-size: cover;
+}
+.splash-image-block{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+}
+.splash-image-tile .splash-icon-img{
+    width: 180px;
+    box-shadow: 0 0 15px -1px #ffffffde;
+    border-radius: 50%;
+}
+.splash-image-block a{
+	text-decoration: none;
+}
+.splash-image-tile{
+    z-index: 99;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.splash-image-text{
+	/*margin-top: 25px;*/
+	font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 24px;
+    text-align: center;
+}
+.splash-screen-section .logo-img img{
+	width: 100%;
+}
+.splash-screen-section .logo-img{
+	position: absolute;
+	z-index: 99;
+	width: 150px;
+	top: 15px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.splash-top-menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+.splash-top-menu img {
+    max-width: 130px;
+}
+
+.splash-top-menu-button {
+    border: solid 1px #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    text-align: center;
+    color: #ffffff;
+    width: 131px;
+    background-color: transparent;
+    padding: 12px 30px;
+}
+.splash-top-menu-button:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.splash-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.splash-footer p {
+    font-size: 13px;
+    color: #ffffff;
+}
+.splash-footer-link p{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .splash-image-wrap{
+        display: block;
+    }
+    .splash-screen-section .logo-img{
+        position: static;
+        margin-top: 30px;
+    }
+    .splash-image-block{
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .splash-top-menu {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background-color: #000000;
+
+    }
+    .splash-top-menu img{
+        margin-bottom: 12px;
+    }
+    .splash-footer {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background-color: #000000;
+    }
+    .splash-image-tile {
+        height: 32vh;
+    }
+    .splash-image-text{
+        font-size: 25px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 14.3px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+}
+
+
+/* ================End Splash CSS =============== */
+
+/* ===================Start Media Query CSS======================= */
+
+
+
+@media (max-width: 1400px){
+    .theme-container {
+        /*max-width: 1170px;*/
+    }
+}
