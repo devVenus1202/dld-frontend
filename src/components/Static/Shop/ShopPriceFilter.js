@@ -27,9 +27,11 @@ class PriseFilter extends Component {
   onMinPriceChange = (e) => {
     const {max} = this.state;
     const {maxValue} = this.props;
+    
     if (+max >= +e.target.value) {
       this.onPriceRangeChange({
-        min: e.target.value
+        min: e.target.value === "" ? 0 : e.target.value,
+        max: max
       });
     }
   };
@@ -39,7 +41,8 @@ class PriseFilter extends Component {
     const {minValue} = this.props;
     if (+min <= +e.target.value) {
       this.onPriceRangeChange({
-        max: e.target.value
+        max: e.target.value === "" ? 0 : e.target.value,
+        min: min
       });
     }
   };
@@ -50,7 +53,16 @@ class PriseFilter extends Component {
   };
 
   onPriceRangeChange = (range) => {
-    this.setState({...this.state, ...range});
+    var temp;
+    if(typeof range.min == 'string') {
+      temp = {
+        min: parseInt(range.min),
+        max: parseInt(range.max)
+      };
+    } else {
+      temp = range;
+    }
+    this.setState({...this.state, ...temp});
   };
 
   render() {
