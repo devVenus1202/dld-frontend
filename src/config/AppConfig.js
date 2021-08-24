@@ -26,11 +26,11 @@ switch (mode) {
         break;
     case "stage":
         data = {
-            API_ENDPOINT: "https://test.dld-vip.com/",
+            API_ENDPOINT: "http://test.dld-vip.com/",
             API_VERSION: "api",
             frontUrl: "",
-            backUrlApi: "https://test.dld-vip.com/api",
-            authorizeURL: "https://apitest.authorize.net/xml/v1/request.api",
+            backUrlApi: "http://test.dld-vip.com/api",
+            authorizeURL: "http://apitest.authorize.net/xml/v1/request.api",
             currency: "$",
             PRODUCTS_PER_PAGE: 8,
             maxAmount: 9999,

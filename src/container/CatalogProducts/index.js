@@ -269,7 +269,6 @@ class CatalogProducts extends Component {
       filters: filterParams,
       last_filter: f
     };
-
     this.redirect(filters);
   };
 
@@ -348,13 +347,13 @@ class CatalogProducts extends Component {
   }
 
   redirect = (filters) => {
-    const { redirect, clearProductList } = this.props;
-    //this.saveLastFilters(filters);
+    const { redirect } = this.props;
+    // this.saveLastFilters(filters);
     const newUrl = this.getUrlForRedirect(filters);
+
     if (this.getFilterUrl(filters) !== this.props.lastFilters){
       this.setState({offset:0})
       redirect(newUrl);
-      clearProductList();
     }
      
   };
